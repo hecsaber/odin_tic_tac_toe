@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <form action="" method="post" id="type-of-game">
+      <div class="radio-block">
+        <input type="radio" name="gametype" id="human" value="human">
+        <label for="human">Human</label>
+      </div>
+      <div class="radio-block">
+        <input type="radio" name="gametype" id="ai" value="ai">
+        <label for="ai">AI</label>
+      </div>
+      <div>
+        <input type="submit" value="Go">
+      </div>
+   </form>
+  </div>
+  <div class="container d-none">
+    <ul class="board"></ul>
+    <div class="controllers">
+
+    </div>
+  </div>
+  <div class="chat-window d-none">
+    <div class="message">
+      <div class="message-content"></div>
+      <button class="chat-button">OK</button>
+    </div>
+  </div>
+  <script src="pubsub.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
